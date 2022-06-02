@@ -43,17 +43,13 @@ public class CalculatorController {
 
         return Math.pow(a,b);
 
-        /*for (int i = 1; i < b; i++){
-            a *= a;
-        }
-        return a;*/
+
     }
 
     @RequestMapping("/sqrt")
     public double sqrt(
             @RequestParam int a){
         return Math.sqrt(a);
-        //test
     }
 
 // quadrieren, exponentiell
