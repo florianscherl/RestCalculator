@@ -11,14 +11,14 @@ public class CalculatorController {
     public int sum(
            @RequestParam int a,
            @RequestParam int b){
-        return a + b;
+        return Calculator.sum(a,b);
     }
 
     @RequestMapping("/mult")
     public int multiply(
             @RequestParam int a,
             @RequestParam int b){
-        return a * b;
+        return Calculator.mult(a,b);
         //test
     }
 
